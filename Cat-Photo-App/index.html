@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!-- Defines the document type as HTML5 -->
+
+<html lang="en">
+<!-- Root element of the HTML document with language set to English -->
+
+<head>
+    <meta charset="utf-8">
+    <!-- Sets the character encoding to UTF-8 for proper text display -->
+
+    <title>CatPhotoApp</title>
+    <!-- Title of the document, displayed in the browser tab -->
+</head>
+
+<body>
+    <!-- Main content of the document -->
+
+    <main>
+        <!-- Main content area of the page, used to structure primary content -->
+
+        <h1>CatPhotoApp</h1>
+        <!-- Main heading for the page -->
+
+        <section>
+            <!-- Section for cat photos -->
+
+            <h2>Cat Photos</h2>
+            <!-- Subheading for the Cat Photos section -->
+
+            <p>Everyone loves <a href="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg" target="_blank">cute
+                    cats</a> online!</p>
+            <!-- Paragraph with a link to a cat photo; <a> tag creates a hyperlink -->
+
+            <p>See more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
+            <!-- Paragraph with a link to the gallery, opens in a new tab with target="_blank" -->
+
+            <a href="https://freecatphotoapp.com" target="_blank">
+                <!-- Link that wraps an image to make it clickable -->
+
+                <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+                    alt="A cute orange cat lying on its back.">
+                <!-- Image element with 'src' specifying the image URL and 'alt' describing the image for accessibility -->
+            </a>
+        </section>
+
+        <section>
+            <!-- Section for lists related to cats -->
+
+            <h2>Cat Lists</h2>
+            <!-- Subheading for the Cat Lists section -->
+
+            <h3>Things cats love:</h3>
+            <!-- Smaller heading for things cats love -->
+
+            <ul>
+                <!-- Unordered list (bullet points) for things cats love -->
+
+                <li>cat nip</li>
+                <!-- List item -->
+
+                <li>laser pointers</li>
+                <!-- Another list item -->
+
+                <li>lasagna</li>
+                <!-- Another list item -->
+            </ul>
+
+            <figure>
+                <!-- Figure element used to group an image and its caption -->
+
+                <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg"
+                    alt="A slice of lasagna on a plate.">
+                <!-- Image of lasagna with 'alt' text for accessibility -->
+
+                <figcaption>Cats <em>love</em> lasagna.</figcaption>
+                <!-- Caption for the image; <em> tag emphasizes the word "love" -->
+            </figure>
+
+            <h3>Top 3 things cats hate:</h3>
+            <!-- Smaller heading for things cats hate -->
+
+            <ol>
+                <!-- Ordered list (numbered) for things cats hate -->
+
+                <li>flea treatment</li>
+                <!-- List item -->
+
+                <li>thunder</li>
+                <!-- Another list item -->
+
+                <li>other cats</li>
+                <!-- Another list item -->
+            </ol>
+
+            <figure>
+                <!-- Another figure with an image and caption -->
+
+                <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg"
+                    alt="Five cats looking around a field.">
+                <!-- Image of multiple cats with descriptive 'alt' text -->
+
+                <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
+                <!-- Caption with <strong> tag to emphasize "hate" -->
+            </figure>
+        </section>
+
+        <section>
+            <!-- Section for a form about cats -->
+
+            <h2>Cat Form</h2>
+            <!-- Subheading for the Cat Form section -->
+
+            <form action="https://freecatphotoapp.com/submit-cat-photo">
+                <!-- Form element with 'action' specifying where form data will be sent -->
+
+                <fieldset>
+                    <!-- Fieldset to group related inputs -->
+
+                    <legend>Is your cat an indoor or outdoor cat?</legend>
+                    <!-- Legend providing a description for the radio button group -->
+
+                    <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
+                    <!-- Radio button for "Indoor" with 'name' for grouping, 'value' for submitted data, and 'checked' to preselect -->
+
+                    <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+                    <!-- Radio button for "Outdoor" with 'name' and 'value' attributes; not preselected -->
+                </fieldset>
+
+                <fieldset>
+                    <!-- Another fieldset grouping for checkboxes -->
+
+                    <legend>What's your cat's personality?</legend>
+                    <!-- Legend for personality traits -->
+
+                    <input id="loving" type="checkbox" name="personality" value="loving" checked>
+                    <!-- Checkbox for "Loving" trait; 'name' allows multiple selections with the same label, 'value' specifies what data will be submitted -->
+
+                    <label for="loving">Loving</label>
+                    <!-- Label for the "Loving" checkbox -->
+
+                    <input id="lazy" type="checkbox" name="personality" value="lazy">
+                    <!-- Checkbox for "Lazy" trait -->
+
+                    <label for="lazy">Lazy</label>
+                    <!-- Label for the "Lazy" checkbox -->
+
+                    <input id="energetic" type="checkbox" name="personality" value="energetic">
+                    <!-- Checkbox for "Energetic" trait -->
+
+                    <label for="energetic">Energetic</label>
+                    <!-- Label for the "Energetic" checkbox -->
+                </fieldset>
+
+                <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+                <!-- Text input for a cat photo URL with a 'placeholder' hint and 'required' to ensure it must be filled -->
+
+                <button type="submit">Submit</button>
+                <!-- Submit button to send form data -->
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <!-- Footer section of the page -->
+
+        <p>
+            No Copyright - <a href="https://www.freecodecamp.org" target="_blank">freeCodeCamp.org</a>
+            <!-- Paragraph with a link to freeCodeCamp -->
+        </p>
+    </footer>
+
+</body>
+
+</html>

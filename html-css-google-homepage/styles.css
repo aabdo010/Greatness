@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+    /*makes the element fit border and vice versa*/
+    margin: 0;
+    /*deals with the space outside the boxes, adjustable*/
+    padding: 0;
+    /*deals with the space inside the boxes, adjustable*/
+}
+
+header {
+    display: flex;
+    /* displays the layout to make it look good*/
+    justify-content: space-between;
+    /*layout the content on each corner of the page*/
+    align-items: center;
+    /*aligns the content along the center of the header perfectly*/
+    padding: 14px;
+    gap: 14px;
+
+}
+
+.M {
+    /*You can either create a class or you can do it by mentioning the container/elements itself like we did the header*/
+    display: flex;
+    gap: 14px;
+}
