@@ -1,0 +1,115 @@
+/* Sets the background image and font for the entire page */
+body {
+  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+/* Main heading style, including font size and spacing */
+h1 {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+/* Subheading style with a slightly smaller font */
+h2 {
+  font-size: 30px;
+}
+
+/* Class to italicize the establishment date */
+.established {
+  font-style: italic;
+}
+
+/* Center-aligns headings and paragraph elements */
+h1, h2, p {
+  text-align: center;
+}
+
+/* Styles for the menu container, sets width and background color */
+.menu {
+  width: 80%;
+  background-color: burlywood;
+  margin-left: auto; /* Centers the menu container horizontally */
+  margin-right: auto;
+  padding: 20px;
+  max-width: 500px; /* Limits the width for better readability */
+}
+
+/* Centers images within the container */
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -25px; /* Adjusts position slightly upward */
+}
+
+/* Styling for horizontal rule lines to match the color scheme */
+hr {
+  height: 2px;
+  background-color: brown;
+  border-color: brown;
+}
+
+/* Additional margin for the bottom line to separate it from the footer */
+.bottom-line {
+  margin-top: 25px;
+}
+
+/* Sets a custom font for the headings */
+h1, h2 {
+  font-family: Impact, serif;
+}
+
+/* Styles for item descriptions and prices, displayed inline */
+.item p {
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+/* Left-aligns the flavor and dessert text, and sets width */
+.flavor, .dessert {
+  text-align: left;
+  width: 75%;
+}
+
+/* Right-aligns the price text and sets width */
+.price {
+  text-align: right;
+  width: 25%;
+}
+
+/* FOOTER STYLES */
+
+/* Smaller font size for the footer content */
+footer {
+  font-size: 14px;
+}
+
+/* Adds spacing below the address in the footer */
+.address {
+  margin-bottom: 5px;
+}
+
+/* Link styling for the footer link */
+a {
+  color: black; /* Sets the link color */
+}
+
+/* Visited link styling (same as default color) */
+a:visited {
+  color: black;
+}
+
+/* Hover color change for interactivity */
+a:hover {
+  color: brown;
+}
+
+/* Active state color for the link */
+a:active {
+  color: brown;
+}
