@@ -1,46 +1,60 @@
+/* Center-aligns the heading text */
 h1 {
     text-align: center;
-  }
-  
-  .container {
-    background-color: rgb(255, 255, 255);
-    padding: 10px 0;
-  }
-  
-  .marker {
-    width: 200px;
-    height: 25px;
-    margin: 10px auto;
-  }
-  
-  .cap {
-    width: 60px;
-    height: 25px;
-  }
-  
-  .sleeve {
-    width: 110px;
-    height: 25px;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-left: 10px double rgba(0, 0, 0, 0.75);
-  }
-  
-  .cap, .sleeve {
-    display: inline-block;
-  }
-  
-  .red {
+}
+
+/* Container styling for the markers */
+.container {
+    background-color: rgb(255, 255, 255); /* White background for contrast */
+    padding: 10px 0; /* Adds vertical padding to create space above and below markers */
+}
+
+/* General marker style */
+.marker {
+    width: 200px; /* Total width for the marker */
+    height: 25px; /* Fixed height for consistency across all markers */
+    margin: 10px auto; /* Centers each marker horizontally, with 10px margin on top and bottom */
+}
+
+/* Styling for the cap section of each marker */
+.cap {
+    width: 60px; /* Width for the cap */
+    height: 25px; /* Same height as the marker for consistent alignment */
+}
+
+/* Styling for the sleeve section of each marker */
+.sleeve {
+    width: 110px; /* Width for the sleeve, making it longer than the cap */
+    height: 25px; /* Same height for consistency */
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white to create a plastic-like appearance */
+    border-left: 10px double rgba(0, 0, 0, 0.75); /* Double border on the left for added detail, in dark semi-transparent black */
+}
+
+/* Applies inline-block display for both the cap and sleeve to align them horizontally */
+.cap, .sleeve {
+    display: inline-block; /* Displays elements side-by-side within the marker */
+}
+
+/* Red marker color and shadow */
+.red {
     background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));
+    /* Gradient from dark brownish red to brighter red and ending in a deep red */
     box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
-  }
-  
-  .green {
+    /* Soft shadow around the red marker with a reddish tint and 80% opacity */
+}
+
+/* Green marker color and shadow */
+.green {
     background: linear-gradient(#55680D, #71F53E, #116C31);
+    /* Gradient from dark green to bright green and back to a deep green */
     box-shadow: 0 0 20px 0 #3B7E20CC;
-  }
-  
-  .blue {
+    /* Soft shadow around the green marker with a greenish tint, with 80% opacity */
+}
+
+/* Blue marker color and shadow */
+.blue {
     background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
+    /* Gradient using HSL: starting with a deep teal, transitioning to a vibrant light blue, and ending in a dark blue */
     box-shadow: 0 0 20px 0 hsla(223, 59%, 31%, 0.8);
-  }
-  
+    /* Soft shadow around the blue marker, with a bluish tint and 80% opacity */
+}
